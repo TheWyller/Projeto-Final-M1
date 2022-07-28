@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weartake</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Weartake</h1>
+        <nav>
+            <ul id = 'filtro'>
+                <li><button class ="btn active">Todos</button></li>
+                <li><button class ="btn">Acessórios</button></li>
+                <li><button class ="btn">Calçados</button></li>
+                <li><button class ="btn">Camisetas</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <ul id = 'vitrine'></ul>    
+       
+        <aside>
+            <div id = 'pesquisaArea' >
+                <input id = "pesquisa" type="text" name="pesquisa" placeholder="Digite aqui sua pesquisa">
+                <button id = 'pesquisar'>Pesquisar</button>
+            </div>
+            <h2 class="titulo">Carrinho de compras</h2>
+            <section id = 'containerCarrinho'></section>
+        </aside>
+    </main>
+
+
+    <script src="./assets/js/produtos.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/filtro.js"></script>
+</body>
+</html>
